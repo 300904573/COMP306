@@ -107,18 +107,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\StyleSheet.css" />
-    <Content Include="Home.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="IMAGES\body3.jpg" />
     <Content Include="IMAGES\food1.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
