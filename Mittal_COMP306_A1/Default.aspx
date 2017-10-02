@@ -28,7 +28,13 @@
                     <asp:Label ID="Label2" runat="server" Text="Last Name :"></asp:Label>
                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:TextBox ID="tbLname" runat="server"></asp:TextBox>
-                   <%--  <asp:RequiredFieldValidator runat="server" id="reqLName" controltovalidate="tbLname" errormessage="Please enter your last name!" />--%>
+                     <%--  <asp:RequiredFieldValidator runat="server" id="reqLName" controltovalidate="tbLname" errormessage="Please enter your last name!" />--%>
+                 </p>
+                 <p>
+                     <asp:Button ID="btnRemember" runat="server" OnClick="btnRemember_Click" Text="Remember Me?" />
+                 </p>
+                 <p>
+                     <asp:Label ID="lblRemember" runat="server" Visible="False"></asp:Label>
                  </p>
                  <p>
                     <asp:Label ID="Label3" runat="server" Text="City :"></asp:Label>
@@ -45,17 +51,21 @@
                     <asp:Label ID="Label5" runat="server" Text="Phone Number :"></asp:Label>
                     &nbsp;
                     <asp:TextBox ID="tbPno" runat="server"></asp:TextBox>
-                   <%-- <asp:RequiredFieldValidator runat="server" id="reqPno" controltovalidate="tbPno" errormessage="Please enter your Phone Number!" />--%>
+                    <%-- <asp:RequiredFieldValidator runat="server" id="reqPno" controltovalidate="tbPno" errormessage="Please enter your Phone Number!" />--%>
                 </p>
                 <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="Label6" runat="server" Text="Province :"></asp:Label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:DropDownList ID="ddListProvince" runat="server">
-                     <asp:ListItem>Ontario</asp:ListItem>
-                     <asp:ListItem>PEI</asp:ListItem>
-                     <asp:ListItem>Alberta</asp:ListItem>
-                     <asp:ListItem>Nova Scotia</asp:ListItem>
+                    &nbsp;
+                    <asp:TextBox ID="tbProvince" runat="server"></asp:TextBox>
+&nbsp; &nbsp;
+                    <asp:DropDownList ID="ddListProvince" runat="server" OnSelectedIndexChanged="ddListProvince_SelectedIndexChanged">
+                     <asp:ListItem Text="Ontario">Ontario</asp:ListItem>
+                     <asp:ListItem Text="PEI">PEI</asp:ListItem>
+                     <asp:ListItem Text="Alberta">Alberta</asp:ListItem>
+                     <asp:ListItem Text="Nova Scotia">Nova Scotia</asp:ListItem>
                     </asp:DropDownList>
+                    <asp:Label ID="province" runat="server"></asp:Label>
                 </p>
                 <p>
                     <asp:Label ID="Label7" runat="server" Text="Food and Drinks :"></asp:Label>
@@ -68,7 +78,7 @@
                         <asp:ListItem>Aloo Paratha</asp:ListItem>
                         <asp:ListItem>Idli</asp:ListItem>
                     </asp:CheckBoxList>
-                   <%-- <asp:RequiredFieldValidator runat="server" id="reqFood" controltovalidate="cbListFood" errormessage="Please Select atleast one food!" />--%>
+                    <%-- <asp:RequiredFieldValidator runat="server" id="reqFood" controltovalidate="cbListFood" errormessage="Please Select atleast one food!" />--%>
                  </p>
                  <p>
                      <asp:Label ID="Label8" runat="server" Text="Delivery Method :"></asp:Label>
@@ -86,7 +96,10 @@
                 </p>
                 <br />
                 <p>
-                    <asp:Button ID="btnSend" runat="server" Text="Send" />
+                    <asp:Button ID="btnSend" runat="server" Text="Send" OnClick="btnSend_Click" />
+                </p>
+                 <p>
+                     <asp:Label ID="dbSc" runat="server" Visible="False"></asp:Label>
                 </p>
             </center>
         </div>

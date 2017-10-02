@@ -58,6 +58,24 @@ namespace Mittal_COMP306_A1 {
         protected global::System.Web.UI.WebControls.TextBox tbLname;
         
         /// <summary>
+        /// btnRemember control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRemember;
+        
+        /// <summary>
+        /// lblRemember control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRemember;
+        
+        /// <summary>
         /// Label3 control.
         /// </summary>
         /// <remarks>
@@ -121,6 +139,15 @@ namespace Mittal_COMP306_A1 {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
+        /// tbProvince control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbProvince;
+        
+        /// <summary>
         /// ddListProvince control.
         /// </summary>
         /// <remarks>
@@ -128,6 +155,15 @@ namespace Mittal_COMP306_A1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddListProvince;
+        
+        /// <summary>
+        /// province control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label province;
         
         /// <summary>
         /// Label7 control.
@@ -191,5 +227,14 @@ namespace Mittal_COMP306_A1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSend;
+        
+        /// <summary>
+        /// dbSc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label dbSc;
     }
 }
