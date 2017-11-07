@@ -14,7 +14,7 @@ namespace Mittal_COMP306_A1
     {
         String str = " ";
         //define SQL connection
-        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["COMP306_300904573ConnectionString"].ConnectionString);
+        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString);
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -83,21 +83,6 @@ namespace Mittal_COMP306_A1
                 tbProvince.Text = Convert.ToString(reader["Province"]);
                 tbComment.Text = Convert.ToString(reader["Comments"]);
 
-
-                //ddListProvince.Text = Convert.ToString(reader["Province"]);
-                // cbListFood.Text = Convert.ToString(reader["FoodAndDrink"]);
-                //rbListMethod.Text = Convert.ToString(reader["PickupOrDelivery"]);
-                //if(Convert.ToString(reader["PickupOrDelivery"])== "Pick Up")
-                //{
-                //    rbListMethod.Items[0].Selected = true;
-                //    rbListMethod.Items[1].Selected = false;
-                //}
-                //else // (reader["PickupOrDelivery"].ToString() == "Delivary")
-                //{
-                //    rbListMethod.Items[0].Selected = false;
-                //    rbListMethod.Items[1].Selected = true;
-                //}
-
             }
             else
             {
@@ -116,19 +101,9 @@ namespace Mittal_COMP306_A1
 
         protected void ddListProvince_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //for(int i=0; i<ddListProvince.Items.Count-1; i++)
-            //{
-            //    if (ddListProvince.Items[i].Selected)
-            //    {
-            //        tbProvince.Text += ddListProvince.Items[i].ToString();
-            //    }
-            //    else
-            //    {
-            //        tbProvince.Text = String.Empty;
-            //    }
-            //}
+           
             this.tbProvince.Text += ddListProvince.SelectedItem.Text;
-            //province.Text += ddListProvince.SelectedValue.ToString();
+          
         }
     } // end of class
 
