@@ -1,6 +1,8 @@
-﻿body {
+﻿
+body {
  
-    background-image: url('../IMAGES/body3.jpg');
+    /*background-image: url('../IMAGES/body3.jpg');*/
+    /*background-image: url(https://storage.googleapis.com/comp306-a1/body3.jpg);*/
     background-repeat:no-repeat;
     background-size:cover;
 }
@@ -11,6 +13,14 @@
     padding:10px;
     /*border:5px solid;*/
     /*background-color:#ffffff;*/
+}
+#banner
+ {
+    background-image: url('../IMAGES/body3.jpg');
+    height: 200px;
+    /*border: 3px solid #dedede;*/
+    font: 400 bold italic arial;
+    font-size: 60px;
 }
 #navigation
 {
@@ -47,13 +57,6 @@
 {
     color : lightblue;
 }
-#banner
-{
-    height : 200px;
-    /*border: 3px solid #dedede;*/
-    font:400 bold  italic arial;
-    font-size:60px;
-}
 #contant_area
 {
     float:left;
@@ -79,3 +82,4 @@
     /*border:3px solid #dedede;*/
     font-size:30px;
 }
+

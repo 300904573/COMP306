@@ -15,7 +15,16 @@
             <br />
             <center> Dine With Us </center>
         </div>
-       
+
+       <div id="navigation">
+           <center>
+           <ul id="nav">
+               <li><a href="#"> &nbsp;Home</a></li>
+               <li><a href="Images.aspx">&nbsp;Images</a></li>
+           </ul>
+          </center>
+       </div>
+
         <div id="contant_area">
             <center>
                  <p>

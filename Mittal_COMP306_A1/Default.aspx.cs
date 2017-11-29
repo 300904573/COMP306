@@ -14,6 +14,7 @@ namespace Mittal_COMP306_A1
     {
         String str = " ";
         //define SQL connection
+        //SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["local306"].ConnectionString);
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString);
 
         protected void Page_Load(object sender, EventArgs e)
