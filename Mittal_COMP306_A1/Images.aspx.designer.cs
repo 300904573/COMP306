@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Mittal_COMP306_A2 {
+namespace Mittal_COMP306_A1 {
     
     
     public partial class Images {
@@ -22,13 +22,13 @@ namespace Mittal_COMP306_A2 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// FileUpload1 control.
+        /// foodImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+        protected global::System.Web.UI.WebControls.FileUpload foodImage;
         
         /// <summary>
         /// BtnUpload control.

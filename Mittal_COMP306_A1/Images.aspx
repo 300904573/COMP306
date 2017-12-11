@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Images.aspx.cs" Inherits="Mittal_COMP306_A2.Images" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Images.aspx.cs" Inherits="Mittal_COMP306_A1.Images" %>
 
 <!DOCTYPE html>
 
@@ -28,7 +28,9 @@
         <div id="body">
             <br />
            <%-- <asp:Label ID="Label1" runat="server" Text="Click Here Upload Image"></asp:Label>--%>
-            <asp:FileUpload ID="FileUpload1" runat="server" />
+         
+            
+            <asp:FileUpload ID="foodImage" runat="server" />
             &nbsp; &nbsp;
             
             <asp:Button ID="BtnUpload" runat="server" Text="Upload" OnClick="BtnUpload_Click"/>
